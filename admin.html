@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/admin.css">
+    <title>Admin Console</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="admin.html">Admin</a>
+            </li>
+          </ul>
+          <div class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container">
+          <h1>Register a new product</h1>
+          <!-- 
+              code:
+              title:
+              price:
+              category:
+              image:
+          -->
+        <div class="form-group">
+            <label for="code">Code</label>
+            <input id="productCode" class="form-control" type="text">
+        </div>
+
+        <div class="form-group">
+              <label for="title">Title</label>
+              <input id="title" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+            <label for="price">Price</label>
+            <input id="price" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+            <label for="category">Category</label>
+            <input id="category" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+              <label for="image">Image URL</label>
+              <input id="image" class="form-control" type="text">
+        </div>
+        <button type="submit" id="btnRegister" class="btn btn-primary">Register</button>
+        <div class="alert alert-success hidden" role="alert" id="successAlert">
+          A new product was registered!
+        </div>
+      </div>
+
+      <div id="isThisRight">
+
+      </div>
+      <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <script src="js/admin.js"></script>
+</body>
+</html>
